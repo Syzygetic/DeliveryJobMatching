@@ -1,0 +1,101 @@
+Company Id,Order Id,Pickup Postal Code,Delivery Postal Code,Urgency,Capacity,Frozen,Job Price
+4,1,608830,787082,Urgent,2.4m Van,Yes,7
+3,2,596226,469975,Urgent,<60 cm (H+L+W) & max 1kg,No,7
+9,3,539231,307953,Urgent,10Ft Lorry,Yes,7
+2,4,059805,640444,Not Urgent,<140 cm (H+L+W) & max 15kg,No,15
+10,5,596226,463222,Urgent,10Ft Lorry,No,7
+3,6,758080,090030,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+9,7,728651,460072,Urgent,<120 cm (H+L+W) & max 10kg,No,7
+10,8,758297,542211,Urgent,1.7m Van,No,7
+9,9,758297,650266,Urgent,<140 cm (H+L+W) & max 15kg,No,9
+2,10,619336,319771,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+5,11,758297,596722,Urgent,<100 cm (H+L+W) & max 8kg,No,7
+1,12,619336,804365,Not Urgent,<120 cm (H+L+W) & max 10kg,No,15
+6,13,758297,670149,Urgent,Document,No,7
+3,14,409051,768091,Urgent,<140 cm (H+L+W) & max 15kg,No,13
+6,15,728651,520460,Urgent,<60 cm (H+L+W) & max 1kg,No,7
+10,16,596226,560179,Urgent,<200 cm (H+L+W) & max 25kg,No,7
+2,17,728651,510707,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+1,18,120727,465536,Urgent,<120 cm (H+L+W) & max 10kg,No,15
+3,19,758297,680707,Urgent,<120 cm (H+L+W) & max 10kg,No,7
+9,20,539231,752360,Urgent,<120 cm (H+L+W) & max 10kg,No,7
+7,21,758297,689874,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+5,22,619930,791459,Urgent,<100 cm (H+L+W) & max 8kg,No,7
+8,23,596226,573910,Urgent,14Ft Lorry,No,9
+5,24,758297,520929,Urgent,<60 cm (H+L+W) & max 1kg,No,7
+8,25,758297,659921,Urgent,14Ft Lorry,No,7
+1,26,419718,610178,Urgent,<120 cm (H+L+W) & max 10kg,No,7
+10,27,659544,760134,Urgent,<160 cm (H+L+W) & max 20kg,No,7
+1,28,575625,438793,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+1,29,486121,510226,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+1,30,539231,787058,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+3,31,758075,510717,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+10,32,758297,680013,Urgent,<140 cm (H+L+W) & max 15kg,No,9
+6,33,758080,530968,Urgent,<60 cm (H+L+W) & max 1kg,No,9
+1,34,539231,140033,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+3,35,698997,640739,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+7,36,637780,311141,Urgent,2.4m Van,No,15
+1,37,088652,349565,Not Urgent,<140 cm (H+L+W) & max 15kg,No,15
+7,38,415936,757055,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+4,39,596226,656289,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+3,40,659248,658078,Not Urgent,<140 cm (H+L+W) & max 15kg,No,21
+9,41,637780,550324,Urgent,<140 cm (H+L+W) & max 15kg,No,12
+9,42,120601,521498,Urgent,<60 cm (H+L+W) & max 1kg,Yes,14
+3,43,758080,522491,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+2,44,758080,522496,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+9,45,539231,465464,Urgent,<120 cm (H+L+W) & max 10kg,No,7
+5,46,596226,645517,Urgent,<60 cm (H+L+W) & max 1kg,No,7
+2,47,539246,406002,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+2,48,059108,140070,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+7,49,409839,510118,Urgent,<120 cm (H+L+W) & max 10kg,No,7
+7,50,539231,670602,Urgent,14Ft Lorry,No,7
+1,51,787472,520405,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+8,52,737855,090040,Urgent,14Ft Lorry,No,12
+10,53,486121,358828,Urgent,Document,No,7
+9,54,539231,141087,Urgent,<120 cm (H+L+W) & max 10kg,No,7
+2,55,415934,530708,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+1,56,758080,518175,Urgent,<140 cm (H+L+W) & max 15kg,No,13
+5,57,528559,791469,Urgent,<100 cm (H+L+W) & max 8kg,No,7
+8,58,539231,510409,Urgent,14Ft Lorry,No,7
+9,59,650170,609777,Urgent,<80 cm (H+L+W) & max 5kg,Yes,11
+6,60,659544,518154,Urgent,<60 cm (H+L+W) & max 1kg,No,11
+9,61,758297,543272,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+9,62,408564,179098,Urgent,<140 cm (H+L+W) & max 15kg,No,13
+6,63,486121,357916,Urgent,<80 cm (H+L+W) & max 5kg,No,7
+2,64,119982,278102,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+4,65,575625,760657,Urgent,<140 cm (H+L+W) & max 15kg,No,15
+8,66,758080,542278,Urgent,10Ft Lorry,No,9
+4,67,329363,312139,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+5,68,757437,595001,Urgent,<100 cm (H+L+W) & max 8kg,No,15
+1,69,659554,126755,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+5,70,486121,650334,Urgent,<120 cm (H+L+W) & max 10kg,No,7
+3,71,551254,561260,Urgent,<120 cm (H+L+W) & max 10kg,No,7
+5,72,486121,670527,Urgent,<120 cm (H+L+W) & max 10kg,No,7
+5,73,758080,522518,Urgent,<120 cm (H+L+W) & max 10kg,No,13
+1,74,729513,559198,Urgent,<140 cm (H+L+W) & max 15kg,No,9
+4,75,348742,821220,Urgent,<60 cm (H+L+W) & max 1kg,Yes,9
+4,76,120613,470147,Urgent,Document,No,7
+2,77,758297,752360,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+3,78,486121,530166,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+7,79,658064,791450,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+8,80,486121,734690,Urgent,14Ft Lorry,No,7
+8,81,757437,521158,Urgent,2.4m Van,No,14
+3,82,528559,269198,Urgent,<140 cm (H+L+W) & max 15kg,No,18
+2,83,619729,610365,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+5,84,539231,608526,Urgent,<120 cm (H+L+W) & max 10kg,No,7
+9,85,609966,544307,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+9,86,408868,540195,Urgent,<140 cm (H+L+W) & max 15kg,No,11
+4,87,758071,150165,Urgent,<60 cm (H+L+W) & max 1kg,No,13
+8,88,728651,648339,Urgent,14Ft Lorry,No,7
+8,89,728651,683815,Urgent,1.7m Van,No,7
+5,90,728651,128021,Urgent,<100 cm (H+L+W) & max 8kg,No,9
+7,91,728651,117613,Urgent,<140 cm (H+L+W) & max 15kg,No,9
+3,92,619729,677670,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+2,93,787472,651443,Urgent,<140 cm (H+L+W) & max 15kg,No,9
+1,94,619336,822612,Urgent,<140 cm (H+L+W) & max 15kg,No,12
+9,95,128420,547136,Urgent,<140 cm (H+L+W) & max 15kg,No,15
+4,96,758297,642216,Urgent,1.7m Van,Yes,7
+9,97,596226,670107,Urgent,<140 cm (H+L+W) & max 15kg,No,7
+1,98,659544,229629,Urgent,<140 cm (H+L+W) & max 15kg,No,9
+1,99,058833,545981,Urgent,<120 cm (H+L+W) & max 10kg,No,7
+1,100,486121,544806,Urgent,<60 cm (H+L+W) & max 1kg,No,9
