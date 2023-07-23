@@ -496,7 +496,7 @@ is_private_jobs_retained = check_matching_clusters(predicted_jobs_clusters[:len(
 if is_private_jobs_retained == True:
     print("\nDelivery Job Matching Successful")
     orderid_array = create_orderid_array(allcompanyjobsdf, alljobtradingjobsdf)
-    recommended_jobs_by_company = assign_jobs_to_companies(predicted_jobs_clusters[len(allcompanyjobsdf):], orderid_array, company_to_cluster_mapping)
+    recommended_jobs_by_company = assign_jobs_to_companies(predicted_jobs_clusters[len(allcompanyjobsdf):], orderid_array[len(allcompanyjobsdf):], company_to_cluster_mapping)
     for company in sorted(recommended_jobs_by_company.keys()):
         jobs = recommended_jobs_by_company[company]
         print(f"Recommended jobs for Company ID {company}: {jobs}")

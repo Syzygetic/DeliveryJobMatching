@@ -311,7 +311,7 @@ companyid_array = create_companyid_array(allcompanyjobsdf, alljobtradingjobsdf)
 
 # Display the predicted jobs clusters and the company IDs the job belongs to
 for i in range(len(predicted_jobs_clusters)):
-    print(f"Job {i+1}: Predicted Cluster {predicted_jobs_clusters[i]}, Company ID {(companyid_array[len(alljobtradingjobsdf):])[i]}")
+    print(f"Job {i+1}: Predicted Cluster {predicted_jobs_clusters[i]}, Company ID {(companyid_array[len(allcompanyjobsdf):])[i]}")
 
 kmeans_entropy = cluster_entropy(predicted_jobs_clusters)
 

@@ -494,22 +494,9 @@ predicted_jobs_clusters = clustering.labels_
 
 companyid_array = create_companyid_array(allcompanyjobsdf, alljobtradingjobsdf)
 
-# # Display the predicted jobs clusters and the company IDs the job belongs to
-# for i in range(len(predicted_jobs_clusters)):
-#     print(f"Job {i+1}: Predicted Cluster {predicted_jobs_clusters[i]}, Company ID {companyid_array[i]}")
-
-# Create a dictionary to store the mapping between company IDs and cluster labels
-company_to_cluster_mapping = {}
-is_private_jobs_retained = check_matching_clusters(predicted_jobs_clusters[:len(allcompanyjobsdf)], companyid_array[:len(allcompanyjobsdf)], company_to_cluster_mapping)
-if is_private_jobs_retained == True:
-    print("\nDelivery Job Matching Successful")
-    orderid_array = create_orderid_array(allcompanyjobsdf, alljobtradingjobsdf)
-    recommended_jobs_by_company = assign_jobs_to_companies(predicted_jobs_clusters[len(allcompanyjobsdf):], orderid_array, company_to_cluster_mapping)
-    for company in sorted(recommended_jobs_by_company.keys()):
-        jobs = recommended_jobs_by_company[company]
-        print(f"Recommended jobs for Company ID {company}: {jobs}")
-else:
-    print("\nDelivery Job Matching Unsuccessful")
+# Display the predicted jobs clusters and the company IDs the job belongs to
+for i in range(len(predicted_jobs_clusters)):
+    print(f"Job {i+1}: Predicted Cluster {predicted_jobs_clusters[i]}, Company ID {companyid_array[i]}")
 
 OJR_entropy = cluster_entropy(clustering.labels_[len(alljobtradingjobsdf):])
 
