@@ -207,11 +207,44 @@ def create_companyid_array(company_datapoints, job_datapoints):
 
     return companyid_array
 
-# Function to create an array to store all job's order id
+def check_matching_clusters(cluster_labels, company_ids, company_to_cluster_mapping):
+    # Populate the dictionary with the values from the arrays
+    for idx, company_id in enumerate(company_ids):
+        # Only add to the dictionary if the company ID is not already present
+        if company_id not in company_to_cluster_mapping:
+            cluster_label = cluster_labels[idx]
+            company_to_cluster_mapping[company_id] = cluster_label
+
+    # Check if all items in the arrays match as expected
+    for idx, company_id in enumerate(company_ids):
+        cluster_label = cluster_labels[idx]
+        if company_to_cluster_mapping.get(company_id) != cluster_label:
+            return False
+
+    return True
+
+# Function to create an array to store all job's order IDs
 def create_orderid_array(company_datapoints, job_datapoints):
     orderid_array = np.concatenate((company_datapoints['Order Id'], job_datapoints['Order Id']))
 
     return orderid_array
+
+def assign_jobs_to_companies(cluster_labels, job_ids, company_to_cluster_mapping):
+    # Create a dictionary to store the recommended jobs' IDs for each company
+    company_job_ids = {}
+
+    # Iterate through the cluster labels and job order IDs arrays
+    for cluster_label, job_id in zip(cluster_labels, job_ids):
+        # Get the company ID based on the cluster label using the provided dictionary
+        company_id = [company_id for company_id, cluster in company_to_cluster_mapping.items() if cluster == cluster_label][0]
+
+        # Add the job order ID to the list of job order IDs for the corresponding company
+        if company_id in company_job_ids:
+            company_job_ids[company_id].append(job_id)
+        else:
+            company_job_ids[company_id] = [job_id]
+
+    return company_job_ids
 
 # Function to get common features between two jobs
 def get_common_features(job1_index, job2_index):
@@ -453,9 +486,22 @@ predicted_jobs_clusters = clustering.labels_
 
 companyid_array = create_companyid_array(allcompanyjobsdf, alljobtradingjobsdf)
 
-# Display the predicted jobs clusters and the company IDs the job belongs to
-for i in range(len(predicted_jobs_clusters)):
-    print(f"Job {i+1}: Predicted Cluster {predicted_jobs_clusters[i]}, Company ID {companyid_array[i]}")
+# # Display the predicted jobs clusters and the company IDs the job belongs to
+# for i in range(len(predicted_jobs_clusters)):
+#     print(f"Job {i+1}: Predicted Cluster {predicted_jobs_clusters[i]}, Company ID {companyid_array[i]}")
+
+# Create a dictionary to store the mapping between company IDs and cluster labels
+company_to_cluster_mapping = {}
+is_private_jobs_retained = check_matching_clusters(predicted_jobs_clusters[:len(allcompanyjobsdf)], companyid_array[:len(allcompanyjobsdf)], company_to_cluster_mapping)
+if is_private_jobs_retained == True:
+    print("\nDelivery Job Matching Successful")
+    orderid_array = create_orderid_array(allcompanyjobsdf, alljobtradingjobsdf)
+    recommended_jobs_by_company = assign_jobs_to_companies(predicted_jobs_clusters[len(allcompanyjobsdf):], orderid_array, company_to_cluster_mapping)
+    for company in sorted(recommended_jobs_by_company.keys()):
+        jobs = recommended_jobs_by_company[company]
+        print(f"Recommended jobs for Company ID {company}: {jobs}")
+else:
+    print("\nDelivery Job Matching Unsuccessful")
 
 # ---------------------------------------------------------------------------------------------------------------------------------
 
